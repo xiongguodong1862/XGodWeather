@@ -1,0 +1,91 @@
+<view class='container' style='background-color:{{theme}};'>
+  <view wx:if='{{isLocating&&!located}}' class='home-locating'>
+    <view>获取定位</view>
+    <text>--</text>
+    <view>下拉刷新获取定位</view>
+  </view>
+  <view wx:else class='home-content' style='background-color:{{theme}};'>
+    <scroll-view scroll-y='{{true}}'>
+      <view class='home-container'>
+        <view class='home-wrap'>
+          <view class='home-search' bindtap='bindToSearch'>
+            <icon type='search' size='15' color='#fff'></icon>
+            <text>搜索城市</text>
+          </view>
+          <view class='home-currentDay'>
+            <view class='home-city'>
+              <text>{{currentWeather.currentCity}}</text>
+              <image src='/images/location.png'></image>
+            </view>
+            <text class='home-currentUpdate'>{{currentTime}}\t更新</text>
+            <view class='home-weather'>
+              <view class='home-weather-temperature'>
+                {{temperature}}
+              </view>
+              <view class='home-weather-desc'>
+                {{currentWeather.weatherDesc}}
+              </view>
+            </view>
+
+            <view class='home-wind'>
+              <text>{{currentWeather.wind}}</text>
+            </view>
+            <view class='home-pm25'>
+              {{pmDesc}} {{currentWeather.pm25}}
+            </view>
+          </view>
+
+          <view wx:if='{{setting.hideFuture}}' class='home-future'>
+            <view class='home-future-content'>
+              <block wx:for='{{futureWeather}}' wx:key='{{index}}'>
+                <view class='home-future-item'>
+                  <view>{{item.date}}</view>
+                  <view class='home-future-item-image'>
+                    <image src='{{item.dayPictureUrl}}'></image>
+                  </view>
+
+                  <view>{{item.temperature}}</view>
+                  <view>{{item.weather}}</view>
+                  <view>{{item.wind}}</view>
+                </view>
+              </block>
+            </view>
+          </view>
+
+          <view wx:if='{{setting.hideIndex}}' class='home-tips'>
+            <view class='content'>
+              <block wx:for='{{tips}}' wx:key='{{index}}'>
+                <view class='home-tips-item'>
+                  <view class='home-tips-item-image'>
+                    <image src='{{item.img}}'></image>
+                  </view>
+
+                  <view class='home-tips-side'>
+                    <view class='home-tips-tip'>
+                      <text class='home-tips-tipt'>{{item.tipt}}</text>\t
+                      <text class='home-tips-zs'>{{item.zs}}</text>
+                    </view>
+                    <text class='home-tips-des'>{{item.des}}</text>
+                  </view>
+                </view>
+
+              </block>
+            </view>
+          </view>
+
+          <view class='from'>
+            <view>
+              数据来源\t百度地图开放平台
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+
+    <!--设置按钮  -->
+    <view bindtap='bindToSetting' class='home-setting'>
+      <image src='/images/setting.png'></image>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,40 @@
+<view class='setting'>
+  <view class='setting-content'>
+    <view class='setting-item'>
+      <view class='title'>
+        <text>未来天气</text>
+      </view>
+      <view class='item'>
+        <switch color='{{theme}}' bindchange='bindSwitch' data-switch='hideFuture' checked='{{setting.hideFuture}}'></switch>
+      </view>
+    </view>
+
+    <view class='setting-item'>
+      <view class='title'>
+        <text>生活指数</text>
+      </view>
+      <view class='item'>
+        <switch color='{{theme}}' bindchange='bindSwitch' data-switch='hideIndex' checked='{{setting.hideIndex}}'></switch>
+      </view>
+    </view>
+
+    <view class='setting-item' bindtap='restore'>
+      <view class='title'>
+        <text>清除数据&还原设置</text>
+      </view>
+      <view class='item'>
+        <image src='/images/arrow.png'></image>
+      </view>
+    </view>
+
+    <view class='setting-item' bindtap='bindToDevice'>
+      <view class='title'>
+        <text>设备信息</text>
+      </view>
+      <view class='item'>
+        <image src='/images/arrow.png'></image>
+      </view>
+    </view>
+  </view>
+
+</view>

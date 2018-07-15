@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/device/device",
+    "pages/setting/setting",
+    "pages/search/search"
+  ],
+  
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "xGod Weather",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  }
+}

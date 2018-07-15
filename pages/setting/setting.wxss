@@ -1,0 +1,31 @@
+/* pages/setting/setting.wxss */
+
+page {
+  color: #666;
+  font-size: 48rpx;
+}
+
+.setting {
+  width: 100%;
+}
+
+.setting-content {
+  padding: 40rpx 50rpx;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.item switch {
+  margin-bottom: 5rpx;
+}
+
+.item image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-top: 15rpx;
+}

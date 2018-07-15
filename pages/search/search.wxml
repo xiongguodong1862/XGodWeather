@@ -1,0 +1,26 @@
+<view class='search'>
+  <view class='search-search'>
+    <view class='search-left'>
+      <icon type='search' size='14'></icon>
+      <input class='search-input' auto-focus='{{true}}' placeholder='请输入城市' value='{{cityInput}}' bindinput='filterCity'></input>
+    </view>
+    <text bindtap='clearInput'>清空</text>
+  </view>
+
+  <scroll-view scroll-y='{{true}}' enable-back-to-top='{{true}}'>
+    <view class='search-list'>
+      <block wx:for='{{filteredCity}}' wx:key='{{index}}'>
+        <view class='search-list-content'>
+          <view class='search-initail'>
+            <text>{{index}}</text>
+          </view>
+          <view bindtap='selectCity' class='search-city' wx:for='{{item}}' wx:key='{{item.id}}' wx:for-item='city'>
+            <view class='search-city-item' data-city='{{city.name}}' hover-class='hover'>
+              {{city.name}}
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

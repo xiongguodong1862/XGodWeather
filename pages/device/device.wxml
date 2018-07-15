@@ -1,0 +1,143 @@
+<view class='device'>
+  <view class='device-brand'>
+    <image src='/images/mobile.png'></image>
+    <text>{{systemInfo.brand}}</text>
+  </view>
+
+  <view class='device-info'>
+    <view class='info-item'>
+      <view class='title'>
+        手机品牌
+      </view>
+      <view class='info'>
+        {{systemInfo.brand}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        手机型号
+      </view>
+      <view class='info'>
+        {{systemInfo.model}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        客户端平台
+      </view>
+      <view class='info'>
+        {{systemInfo.platform}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        系统
+      </view>
+      <view class='info'>
+        {{systemInfo.system}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        语言
+      </view>
+      <view class='info'>
+        {{systemInfo.language}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        网络状态
+      </view>
+      <view class='info'>
+        {{network}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        屏幕亮度
+      </view>
+      <view class='info'>
+        {{brightness}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        设备像素比
+      </view>
+      <view class='info'>
+        {{systemInfo.pixelRatio}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        屏幕高度
+      </view>
+      <view class='info'>
+        {{systemInfo.screenHeight}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        屏幕宽度
+      </view>
+      <view class='info'>
+        {{systemInfo.screenWidth}}
+      </view>
+    </view>
+
+
+
+    <view class='info-item'>
+      <view class='title'>
+        客户端窗口高度
+      </view>
+      <view class='info'>
+        {{systemInfo.windowHeight}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        客户端窗口宽度
+      </view>
+      <view class='info'>
+        {{systemInfo.windowWidth}}
+      </view>
+    </view>
+
+    <view class='info-item'>
+      <view class='title'>
+        状态栏高度
+      </view>
+      <view class='info'>
+        {{systemInfo.statusBarHeight}}
+      </view>
+    </view>
+
+    <view class='info-item'>
+      <view class='title'>
+        微信字体大小
+      </view>
+      <view class='info'>
+        {{systemInfo.fontSizeSetting}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        微信版本号
+      </view>
+      <view class='info'>
+        {{systemInfo.version}}
+      </view>
+    </view>
+    <view class='info-item'>
+      <view class='title'>
+        小程序基础库版本号
+      </view>
+      <view class='info'>
+        {{systemInfo.SDKVersion}}
+      </view>
+    </view>
+
+  </view>
+</view>

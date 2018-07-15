@@ -1,0 +1,203 @@
+/* pages/home/home.wxss */
+
+page {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  font-family: "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-locating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   min-height: 100vh;
+}
+
+.home-content {
+  /* height: 100%;    */
+  position: relative;
+   min-height: 100vh;
+}
+
+.home-locating view {
+  margin: 30rpx auto;
+  font-size: 35rpx;
+}
+
+.home-container {
+  width: 100%;
+ min-height: 100vh;
+}
+
+.home-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.home-currentDay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-search {
+  margin: 30rpx 40rpx;
+  border-bottom: 1px solid #fff;
+  display: flex;
+}
+
+.home-search icon {
+  margin: 7rpx 15rpx 0 0;
+}
+
+.home-city {
+  margin: 60rpx auto;
+  font-size: 35rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.home-city image {
+  height: 35rpx;
+  width: 35rpx;
+  margin-left: 15rpx;
+  margin-top: 7rpx;
+}
+
+.home-currentUpdate {
+  font-size: 24rpx;
+}
+
+.home-weather {
+  margin: 30rpx auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-weather-temperature {
+  font-size: 120rpx;
+  margin: 60rpx auto;
+}
+
+.home-weather-desc {
+  margin: 20rpx auto;
+}
+
+.home-wind {
+  margin-bottom: 30rpx;
+  font-size: 24rpx;
+}
+
+.home-pm25 {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 5rpx 10rpx;
+  border-radius: 15rpx;
+  font-size: 24rpx;
+}
+
+.home-future {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin: 30rpx auto 60rpx;
+  padding: 20rpx 10rpx;
+}
+
+.home-future-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-future-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.home-future-item image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.home-future-item view {
+  margin: 10rpx auto;
+}
+
+.home-future-item-image {
+  margin: 10rpx auto;
+}
+
+.home-tips {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin: 60rpx auto;
+  padding: 30rpx 20rpx 0 20rpx;
+  box-sizing: border-box;
+}
+
+.home-tips .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-tips-item {
+  display: flex;
+  flex: 1;
+  margin-bottom: 30rpx;
+}
+
+.home-tips-item-image {
+  width: 150rpx;
+  margin-right: 20rpx;
+}
+
+.home-tips-item image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.home-tips-side {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+}
+
+.home-tips-des {
+  margin-top: 20rpx;
+}
+
+.from {
+  width: 100%;
+  height: 30rpx;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  position: absolute;
+  bottom: 15rpx;
+  text-align: center;
+
+}
+
+.home-setting {
+  position: fixed;
+  top: 30rpx;
+  right: 40rpx;
+}
+
+.home-setting image {
+  width: 50rpx;
+  height: 50rpx;
+}

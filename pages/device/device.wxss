@@ -1,0 +1,42 @@
+/* pages/device/device.wxss */
+
+page {
+  color: #333;
+}
+
+.device {
+  display: flex;
+  flex-direction: column;
+}
+
+.device-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:50rpx 40rpx 0;
+  padding-bottom: 50rpx;
+  font-size: 100rpx;
+  border-bottom: 1px solid #ccc;
+  color: #40a7e7;
+}
+.device-brand image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.device-info{
+  padding: 0 40rpx;
+  
+}
+.info-item{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  padding: 40rpx 20rpx;
+}
+.info-item .title{
+
+}
+.info-item .info{
+  font-size: 22rpx;
+}

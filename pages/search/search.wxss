@@ -1,0 +1,72 @@
+/* pages/search/search.wxss */
+
+page {
+  color: #333;
+  height: 100%;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-search {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  justify-content: space-between;
+  padding: 30rpx 30rpx;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.search-left {
+  display: flex;
+  font-size: 26rpx;
+}
+
+.search-left icon {
+  margin-top: 14rpx;
+}
+
+.search-input {
+  border-bottom: 1px solid #ccc;
+  width: 550rpx;
+}
+.search-list{
+  margin-top: 116rpx;
+}
+.search-list-content {
+  
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.search-initail {
+  background-color: #333;
+  padding: 10rpx 30rpx;
+  color: #fff;
+}
+
+.search-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-city-item {
+  padding: 50rpx 30rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 35rpx;
+}
+.search-city-item.hover{
+  background-color: #eee
+}
