@@ -11,7 +11,7 @@ App({
     wx.clearStorage();
   },
   globalData: {
-    ak: 'AEdCY0ZwFdrVAdGrX2XGTy2gd37UxOfQ',
+    ak: '你的小程序ak',
     systemInfo:{}
   },
   setGeocodeUrl(address) {
