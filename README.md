@@ -9,7 +9,7 @@
 
 微信扫码:
 
-![XGodWeather](D:\下载\gh_b743dde7fb6b_258.jpg)
+![XGodWeather](https://wx4.sinaimg.cn/mw690/005Jy6akly1fte1ns8gn7j3076076dgu.jpg)
 
  
 
