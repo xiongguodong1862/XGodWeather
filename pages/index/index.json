@@ -1,10 +1,4 @@
 {
-  "window": {
-    "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "xGod Weather",
-    "backgroundColor": "#eeeeee",
-    "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": true
-  }
+  "navigationBarTitleText": "xGod Weather",
+  "enablePullDownRefresh": true
 }
